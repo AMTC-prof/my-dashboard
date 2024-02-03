@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import {  Component } from '@angular/core';
 
 @Component({
   selector: 'app-view-transition',
@@ -9,6 +9,6 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   ],
   template: `<p>view-transition works!</p>`,
   styles: ``,
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  
 })
-export class ViewTransitionComponent { }
+export default class ViewTransitionComponent { }

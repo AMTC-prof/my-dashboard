@@ -2,13 +2,13 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-change-detection',
+  selector: 'app-control-flow',
   standalone: true,
   imports: [
     CommonModule,
   ],
-  template: `<p>change-detection works!</p>`,
+  template: `<p>control-flow works!</p>`,
   styles: ``,
   
 })
-export default class ChangeDetectionComponent { }
+export default class ControlFlowComponent { }

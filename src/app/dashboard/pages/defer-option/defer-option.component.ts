@@ -1,14 +1,13 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-
 @Component({
-  selector: 'app-change-detection',
+  selector: 'app-defer-option',
   standalone: true,
   imports: [
     CommonModule,
   ],
-  template: `<p>change-detection works!</p>`,
+  template: `<p>defer-option works!</p>`,
   styles: ``,
   
 })
-export default class ChangeDetectionComponent { }
+export default class DeferOptionComponent { }
