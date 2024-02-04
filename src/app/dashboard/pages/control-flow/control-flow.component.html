@@ -17,4 +17,26 @@
              
         }
     </div>
+
+       <!-- @Switch -->
+    <div class="bg-white rounded shadow p-10">
+        @switch(grade()){
+            @case('A'){
+                <p>Sobresaliente</p>
+            }
+            @case('B'){
+                <p>Notable</p>
+            }
+            @case('F'){
+                <p>Suspendido</p>
+            }
+            @default{
+                <p>Sin datos</p>
+            }
+                        
+         }
+    </div>
 </section>
+
+
+ 
