@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, computed, signal } from '@angular/core';
-import { TitleComponent } from '@shared/title/title/title.component';
+import { TitleComponent } from '@shared/title/title.component';
 
 @Component({
   selector: 'app-change-detection',
