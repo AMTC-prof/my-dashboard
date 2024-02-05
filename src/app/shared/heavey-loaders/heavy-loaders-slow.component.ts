@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { TitleComponent } from '@shared/title/title.component';
 
 @Component({
   selector: 'app-heavy-loaders-slow',
@@ -10,9 +11,7 @@ import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
   template: `<section [ngClass]="['w-full h-[600px]', cssClass]"> 
     Heavy Loader Slow
   </section>`,
-  styles: `
-    
-  `,
+  styles: ``,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class HeavyLoadersSlowComponent { 
