@@ -1,47 +1,39 @@
 <app-title title="Defer Triggers"></app-title>
 
-<section>
-    
-    <hr class="my-2">
-    <h1 class="text-xl">On Interaction con placeholder</h1>
-
+<section class="mt-5">
+  
     @defer(on interaction) {
-        <app-heavy-loaders-fast cssClass="bg-blue-500 h-20">
+        <app-heavy-loaders-fast cssClass="bg-red-500 h-20">
             <span>On Interaction</span>
         </app-heavy-loaders-fast>
     } @placeholder {
         <div class="w-full h-20 bg-purple-300" >
-            Click en el div
+            Click on div
         </div>
     }
 
 </section>
 
-<section>
-    
-    <hr class="my-2">
-    <h1 class="text-xl">On Interaction con Botón</h1>
-    
+<section class="mt-5">
+       
     <button #btnInteraction class="p-2 bg-blue-500 hover:bg-blue-700 transition-all rounder text-white my-2">
         Click Me!
     </button>
 
     @defer(on interaction(btnInteraction)) {
-        <app-heavy-loaders-fast cssClass="bg-blue-500 h-20">
-            <span>On Interaction(button)</span>
+        <app-heavy-loaders-fast cssClass="bg-red-500 h-20">
+            <span>On Interaction</span>
         </app-heavy-loaders-fast>
     } @placeholder {
         <div class="w-full h-20 bg-purple-300" >
-            Click en el div
+            Click on button
         </div>
     }
 
 </section>
 
-<section>
-    
-    <hr class="my-2">
-    <h1 class="text-xl">On Hover con placerholder</h1>
+<section class="mt-5">
+   
     
     @defer(on hover) {
         <app-heavy-loaders-fast cssClass="bg-blue-500 h-20">
@@ -49,55 +41,46 @@
         </app-heavy-loaders-fast>
     } @placeholder {
         <div class="w-full h-20 bg-purple-300" >
-            Click en el div
+            Click on div
         </div>
     }
 
 </section>
 
-<section>
-    
-    <hr class="my-2">
-    <h1 class="text-xl">On Hover con elemento X</h1>
+<section class="mt-5">
 
-    <div #divHover class="bg-yellow-300 h-10 w-full"> Hover Aqui!</div>
-    
-    @defer(on hover(divHover)) {
+       
+    @defer(on hover(btnInteraction)) {
         <app-heavy-loaders-fast cssClass="bg-blue-500 h-20">
-            <span>On hover(divHover)</span>
+            <span>On hover</span>
         </app-heavy-loaders-fast>
     } @placeholder {
         <div class="w-full h-20 bg-purple-300" >
-            Click en el div
+            Hover on button
         </div>
     }
 
 </section>
 
-<section>
-    
-    <hr class="my-2">
-    <h1 class="text-xl">On Immediate -> Se carga tan pronto haya terminado el navegador de construir la aplicacion</h1>
+<section class="mt-5">
+        
     
     @defer(on immediate) {
-        <app-heavy-loaders-fast cssClass="bg-blue-500 h-20">
+        <app-heavy-loaders-fast cssClass="bg-green-500 h-20">
             <span>On immediate</span>
         </app-heavy-loaders-fast>
     } @placeholder {
         <div class="w-full h-20 bg-purple-300" >
-            Click en el div
+            Inmediate load
         </div>
     }
 
 </section>
 
-<section>
-    
-    <hr class="my-2">
-    <h1 class="text-xl">On Timer</h1>
-    
+<section class="mt-5">
+      
     @defer(on timer(5s)) {
-        <app-heavy-loaders-fast cssClass="bg-blue-500 h-20">
+        <app-heavy-loaders-fast cssClass="bg-green-500 h-20">
             <span>On timer</span>
         </app-heavy-loaders-fast>
     } @placeholder {
